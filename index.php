@@ -40,11 +40,19 @@ require_once("config.php");
 
 //echo $aluno;
 
-
+//alterar um usuário
+/*
 $usuario = new Usuario();
 
 $usuario->LoadById(6);
 $usuario->update("Professo","mestre");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
 
 echo $usuario;
 
